@@ -11,16 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
-    - name: checkout code
-    - uses: actions/checkout@v2
-    
-    
-    - name: set up gcc
-      run: sudo apt-get install g++ 
-    
-    - name: build 
-      run: make
+      - name: checkout code
+        uses: actions/checkout@v2
       
-    - name: run tests in any
-      run: ./funcclass
+      
+      - name: set up gcc
+        run: sudo apt-get install g++ 
+      
+      - name: build 
+        run: make
+        
+      - name: run tests in any
+        run: ./funcclass
