@@ -13,6 +13,8 @@
 *.dylib
 *.dll
 
+*.elf
+
 *.exe
 *.out
 *.app
