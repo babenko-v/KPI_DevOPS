@@ -228,7 +228,7 @@ LTLIBOBJS =
 MAKEINFO = ${SHELL} '/home/vboxuser/KPI_DevOPS/missing' makeinfo
 MKDIR_P = /usr/bin/mkdir -p
 OBJEXT = o
-PACKAGE = program
+PACKAGE = myprogram
 PACKAGE_BUGREPORT = 11112004valerababenko@gmail.com
 PACKAGE_NAME = program
 PACKAGE_STRING = program 1.0
@@ -236,6 +236,11 @@ PACKAGE_TARNAME = program
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.0
 PATH_SEPARATOR = :
+PKG_CONFIG = /usr/bin/pkg-config
+PKG_CONFIG_LIBDIR = 
+PKG_CONFIG_PATH = 
+PROGRAM_CFLAGS = -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+PROGRAM_LIBS = -lglib-2.0
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = 
@@ -286,6 +291,8 @@ top_builddir = .
 top_srcdir = .
 AUTOMAKE_OPTIONS = foreign
 myprogram_SOURCES = main.cpp FuncClass.cpp FuncClass.h
+CTRLF_DIR = $(CURDIR)/debian
+CTRLF_NAME = $(CTRLF_DIR)/control
 all: all-am
 
 .SUFFIXES:
@@ -761,6 +768,19 @@ uninstall-am: uninstall-binPROGRAMS
 
 .PRECIOUS: Makefile
 
+
+.PHONY: deb debug
+
+deb:
+	echo "Package: $(PACKAGE)" > deb/DEBIAN/control
+	echo "Version: $(VERSION)" >> deb/DEBIAN/control
+	echo "Architecture: all" >> deb/DEBIAN/control
+	echo "Maintainer: $(PACKAGE_BUGREPORT)" >> deb/DEBIAN/control
+	echo "Description: MyProgram does amazing things" >> deb/DEBIAN/control
+debug:
+	@echo "${PACKAGE}"
+	@echo "${VERSION}"
+	@echo "${PACKAGE_BUGREPORT}"
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

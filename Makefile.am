@@ -15,12 +15,12 @@ CTRLF_NAME = $(CTRLF_DIR)/control
 
 
 deb:
-    echo "Package: $(PACKAGE)" > deb/DEBIAN/control
-    echo "Version: $(VERSION)" >> deb/DEBIAN/control
-    echo "Architecture: all" >> deb/DEBIAN/control
-    echo "Maintainer: $(PACKAGE_BUGREPORT)" >> deb/DEBIAN/control
-    echo "Description: MyProgram does amazing things" >> deb/DEBIAN/control
+	echo "Package: $(PACKAGE)" > deb/DEBIAN/control
+	echo "Version: $(VERSION)" >> deb/DEBIAN/control
+	echo "Architecture: all" >> deb/DEBIAN/control
+	echo "Maintainer: $(PACKAGE_BUGREPORT)" >> deb/DEBIAN/control
+	echo "Description: MyProgram does amazing things" >> deb/DEBIAN/control
 debug:
- @echo "${PACKAGE}"
- @echo "${VERSION}"
- @echo "${PACKAGE_BUGREPORT}"
+	@echo "${PACKAGE}"
+	@echo "${VERSION}"
+	@echo "${PACKAGE_BUGREPORT}"

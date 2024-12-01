@@ -42,49 +42,49 @@ PATH: /snap/bin/
 ## Core tests. ##
 ## ----------- ##
 
-configure:2370: looking for aux files: compile missing install-sh
-configure:2383:  trying ./
-configure:2412:   ./compile found
-configure:2412:   ./missing found
-configure:2394:   ./install-sh found
-configure:2541: checking for a BSD-compatible install
-configure:2614: result: /usr/bin/install -c
-configure:2625: checking whether build environment is sane
-configure:2680: result: yes
-configure:2839: checking for a race-free mkdir -p
-configure:2883: result: /usr/bin/mkdir -p
-configure:2890: checking for gawk
-configure:2925: result: no
-configure:2890: checking for mawk
-configure:2911: found /usr/bin/mawk
-configure:2922: result: mawk
-configure:2933: checking whether make sets $(MAKE)
-configure:2956: result: yes
-configure:2986: checking whether make supports nested variables
-configure:3004: result: yes
-configure:3200: checking for pkg-config
-configure:3223: found /usr/bin/pkg-config
-configure:3235: result: /usr/bin/pkg-config
-configure:3260: checking pkg-config is at least version 0.9.0
-configure:3263: result: yes
-configure:3273: checking for glib-2.0
-configure:3280: $PKG_CONFIG --exists --print-errors "glib-2.0"
-configure:3283: $? = 0
-configure:3297: $PKG_CONFIG --exists --print-errors "glib-2.0"
-configure:3300: $? = 0
-configure:3358: result: yes
-configure:3432: checking for g++
-configure:3453: found /usr/bin/g++
-configure:3464: result: g++
-configure:3491: checking for C++ compiler version
-configure:3500: g++ --version >&5
+configure:2382: looking for aux files: compile missing install-sh
+configure:2395:  trying ./
+configure:2424:   ./compile found
+configure:2424:   ./missing found
+configure:2406:   ./install-sh found
+configure:2553: checking for a BSD-compatible install
+configure:2626: result: /usr/bin/install -c
+configure:2637: checking whether build environment is sane
+configure:2692: result: yes
+configure:2851: checking for a race-free mkdir -p
+configure:2895: result: /usr/bin/mkdir -p
+configure:2902: checking for gawk
+configure:2937: result: no
+configure:2902: checking for mawk
+configure:2923: found /usr/bin/mawk
+configure:2934: result: mawk
+configure:2945: checking whether make sets $(MAKE)
+configure:2968: result: yes
+configure:2998: checking whether make supports nested variables
+configure:3016: result: yes
+configure:3212: checking for pkg-config
+configure:3235: found /usr/bin/pkg-config
+configure:3247: result: /usr/bin/pkg-config
+configure:3272: checking pkg-config is at least version 0.9.0
+configure:3275: result: yes
+configure:3285: checking for glib-2.0
+configure:3292: $PKG_CONFIG --exists --print-errors "glib-2.0"
+configure:3295: $? = 0
+configure:3309: $PKG_CONFIG --exists --print-errors "glib-2.0"
+configure:3312: $? = 0
+configure:3370: result: yes
+configure:3444: checking for g++
+configure:3465: found /usr/bin/g++
+configure:3476: result: g++
+configure:3503: checking for C++ compiler version
+configure:3512: g++ --version >&5
 g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
 Copyright (C) 2021 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:3511: $? = 0
-configure:3500: g++ -v >&5
+configure:3523: $? = 0
+configure:3512: g++ -v >&5
 Using built-in specs.
 COLLECT_GCC=g++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -96,47 +96,47 @@ Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
 ... rest of stderr output deleted ...
-configure:3511: $? = 0
-configure:3500: g++ -V >&5
+configure:3523: $? = 0
+configure:3512: g++ -V >&5
 g++: error: unrecognized command-line option '-V'
 g++: fatal error: no input files
 compilation terminated.
-configure:3511: $? = 1
-configure:3500: g++ -qversion >&5
+configure:3523: $? = 1
+configure:3512: g++ -qversion >&5
 g++: error: unrecognized command-line option '-qversion'; did you mean '--version'?
 g++: fatal error: no input files
 compilation terminated.
-configure:3511: $? = 1
-configure:3531: checking whether the C++ compiler works
-configure:3553: g++    conftest.cpp  >&5
-configure:3557: $? = 0
-configure:3607: result: yes
-configure:3610: checking for C++ compiler default output file name
-configure:3612: result: a.out
-configure:3618: checking for suffix of executables
-configure:3625: g++ -o conftest    conftest.cpp  >&5
-configure:3629: $? = 0
-configure:3652: result: 
-configure:3674: checking whether we are cross compiling
-configure:3682: g++ -o conftest    conftest.cpp  >&5
-configure:3686: $? = 0
-configure:3693: ./conftest
-configure:3697: $? = 0
-configure:3712: result: no
-configure:3717: checking for suffix of object files
-configure:3740: g++ -c   conftest.cpp >&5
-configure:3744: $? = 0
-configure:3766: result: o
-configure:3770: checking whether the compiler supports GNU C++
-configure:3790: g++ -c   conftest.cpp >&5
-configure:3790: $? = 0
-configure:3800: result: yes
-configure:3811: checking whether g++ accepts -g
-configure:3832: g++ -c -g  conftest.cpp >&5
-configure:3832: $? = 0
-configure:3876: result: yes
-configure:3896: checking for g++ option to enable C++11 features
-configure:3911: g++  -c -g -O2  conftest.cpp >&5
+configure:3523: $? = 1
+configure:3543: checking whether the C++ compiler works
+configure:3565: g++    conftest.cpp  >&5
+configure:3569: $? = 0
+configure:3619: result: yes
+configure:3622: checking for C++ compiler default output file name
+configure:3624: result: a.out
+configure:3630: checking for suffix of executables
+configure:3637: g++ -o conftest    conftest.cpp  >&5
+configure:3641: $? = 0
+configure:3664: result: 
+configure:3686: checking whether we are cross compiling
+configure:3694: g++ -o conftest    conftest.cpp  >&5
+configure:3698: $? = 0
+configure:3705: ./conftest
+configure:3709: $? = 0
+configure:3724: result: no
+configure:3729: checking for suffix of object files
+configure:3752: g++ -c   conftest.cpp >&5
+configure:3756: $? = 0
+configure:3778: result: o
+configure:3782: checking whether the compiler supports GNU C++
+configure:3802: g++ -c   conftest.cpp >&5
+configure:3802: $? = 0
+configure:3812: result: yes
+configure:3823: checking whether g++ accepts -g
+configure:3844: g++ -c -g  conftest.cpp >&5
+configure:3844: $? = 0
+configure:3888: result: yes
+configure:3908: checking for g++ option to enable C++11 features
+configure:3923: g++  -c -g -O2  conftest.cpp >&5
 conftest.cpp: In function 'int main(int, char**)':
 conftest.cpp:177:25: warning: empty parentheses were disambiguated as a function declaration [-Wvexing-parse]
   177 |   cxx11test::delegate d2();
@@ -146,27 +146,27 @@ conftest.cpp:177:25: note: remove parentheses to default-initialize a variable
       |                         ^~
       |                         --
 conftest.cpp:177:25: note: or replace parentheses with braces to value-initialize a variable
-configure:3911: $? = 0
-configure:3929: result: none needed
-configure:3996: checking whether make supports the include directive
-configure:4011: make -f confmf.GNU && cat confinc.out
+configure:3923: $? = 0
+configure:3941: result: none needed
+configure:4008: checking whether make supports the include directive
+configure:4023: make -f confmf.GNU && cat confinc.out
 this is the am__doit target
-configure:4014: $? = 0
-configure:4033: result: yes (GNU style)
-configure:4059: checking dependency style of g++
-configure:4171: result: gcc3
-configure:4248: checking for gcc
-configure:4269: found /usr/bin/gcc
-configure:4280: result: gcc
-configure:4633: checking for C compiler version
-configure:4642: gcc --version >&5
+configure:4026: $? = 0
+configure:4045: result: yes (GNU style)
+configure:4071: checking dependency style of g++
+configure:4183: result: gcc3
+configure:4260: checking for gcc
+configure:4281: found /usr/bin/gcc
+configure:4292: result: gcc
+configure:4645: checking for C compiler version
+configure:4654: gcc --version >&5
 gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
 Copyright (C) 2021 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:4653: $? = 0
-configure:4642: gcc -v >&5
+configure:4665: $? = 0
+configure:4654: gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -178,42 +178,66 @@ Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
 ... rest of stderr output deleted ...
-configure:4653: $? = 0
-configure:4642: gcc -V >&5
+configure:4665: $? = 0
+configure:4654: gcc -V >&5
 gcc: error: unrecognized command-line option '-V'
 gcc: fatal error: no input files
 compilation terminated.
-configure:4653: $? = 1
-configure:4642: gcc -qversion >&5
+configure:4665: $? = 1
+configure:4654: gcc -qversion >&5
 gcc: error: unrecognized command-line option '-qversion'; did you mean '--version'?
 gcc: fatal error: no input files
 compilation terminated.
-configure:4653: $? = 1
-configure:4642: gcc -version >&5
+configure:4665: $? = 1
+configure:4654: gcc -version >&5
 gcc: error: unrecognized command-line option '-version'
 gcc: fatal error: no input files
 compilation terminated.
-configure:4653: $? = 1
-configure:4657: checking whether the compiler supports GNU C
-configure:4677: gcc -c   conftest.c >&5
-configure:4677: $? = 0
-configure:4687: result: yes
-configure:4698: checking whether gcc accepts -g
-configure:4719: gcc -c -g  conftest.c >&5
-configure:4719: $? = 0
-configure:4763: result: yes
-configure:4783: checking for gcc option to enable C11 features
-configure:4798: gcc  -c -g -O2  conftest.c >&5
-configure:4798: $? = 0
-configure:4816: result: none needed
-configure:4932: checking whether gcc understands -c and -o together
-configure:4955: gcc -c conftest.c -o conftest2.o
-configure:4958: $? = 0
-configure:4955: gcc -c conftest.c -o conftest2.o
-configure:4958: $? = 0
-configure:4970: result: yes
-configure:4989: checking dependency style of gcc
-configure:5101: result: gcc3
+configure:4665: $? = 1
+configure:4669: checking whether the compiler supports GNU C
+configure:4689: gcc -c   conftest.c >&5
+configure:4689: $? = 0
+configure:4699: result: yes
+configure:4710: checking whether gcc accepts -g
+configure:4731: gcc -c -g  conftest.c >&5
+configure:4731: $? = 0
+configure:4775: result: yes
+configure:4795: checking for gcc option to enable C11 features
+configure:4810: gcc  -c -g -O2  conftest.c >&5
+configure:4810: $? = 0
+configure:4828: result: none needed
+configure:4944: checking whether gcc understands -c and -o together
+configure:4967: gcc -c conftest.c -o conftest2.o
+configure:4970: $? = 0
+configure:4967: gcc -c conftest.c -o conftest2.o
+configure:4970: $? = 0
+configure:4982: result: yes
+configure:5001: checking dependency style of gcc
+configure:5113: result: gcc3
+configure:5267: checking that generated files are newer than configure
+configure:5273: result: done
+configure:5300: creating ./config.status
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by program config.status 1.0, which was
+generated by GNU Autoconf 2.71.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status 
+
+on ubuntumate
+
+config.status:780: creating Makefile
+config.status:952: executing depfiles commands
+config.status:1029: cd .       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for 'am--depfiles'.
+config.status:1034: $? = 0
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -302,7 +326,7 @@ CXX='g++'
 CXXDEPMODE='depmode=gcc3'
 CXXFLAGS='-g -O2'
 CYGPATH_W='echo'
-DEFS=''
+DEFS='-DPACKAGE_NAME=\"program\" -DPACKAGE_TARNAME=\"program\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"program\ 1.0\" -DPACKAGE_BUGREPORT=\"11112004valerababenko@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"program\" -DVERSION=\"1.0\"'
 DEPDIR='.deps'
 ECHO_C=''
 ECHO_N='-n'
@@ -314,7 +338,9 @@ INSTALL_PROGRAM='${INSTALL}'
 INSTALL_SCRIPT='${INSTALL}'
 INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
 LDFLAGS=''
+LIBOBJS=''
 LIBS=''
+LTLIBOBJS=''
 MAKEINFO='${SHELL} '\''/home/vboxuser/KPI_DevOPS/missing'\'' makeinfo'
 MKDIR_P='/usr/bin/mkdir -p'
 OBJEXT='o'
@@ -337,6 +363,8 @@ STRIP=''
 VERSION='1.0'
 ac_ct_CC='gcc'
 ac_ct_CXX='g++'
+am__EXEEXT_FALSE=''
+am__EXEEXT_TRUE='#'
 am__fastdepCC_FALSE='#'
 am__fastdepCC_TRUE=''
 am__fastdepCXX_FALSE='#'
@@ -354,7 +382,7 @@ datadir='${datarootdir}'
 datarootdir='${prefix}/share'
 docdir='${datarootdir}/doc/${PACKAGE_TARNAME}'
 dvidir='${docdir}'
-exec_prefix='NONE'
+exec_prefix='${prefix}'
 host_alias=''
 htmldir='${docdir}'
 includedir='${prefix}/include'
@@ -368,7 +396,7 @@ mandir='${datarootdir}/man'
 mkdir_p='$(MKDIR_P)'
 oldincludedir='/usr/include'
 pdfdir='${docdir}'
-prefix='NONE'
+prefix='/usr/local'
 program_transform_name='s,x,x,'
 psdir='${docdir}'
 runstatedir='${localstatedir}/run'
