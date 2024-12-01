@@ -209,7 +209,7 @@ CXX = g++
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"program\" -DPACKAGE_TARNAME=\"program\" -DPACKAGE_VERSION=\"5.0,\ 1.0\" -DPACKAGE_STRING=\"program\ 5.0,\ 1.0\" -DPACKAGE_BUGREPORT=\"11112004valerababenko@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"program\" -DVERSION=\"5.0,\ 1.0\"
+DEFS = -DPACKAGE_NAME=\"program\" -DPACKAGE_TARNAME=\"program\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"program\ 1.0\" -DPACKAGE_BUGREPORT=\"11112004valerababenko@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"program\" -DVERSION=\"1.0\"
 DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
@@ -231,15 +231,15 @@ OBJEXT = o
 PACKAGE = program
 PACKAGE_BUGREPORT = 11112004valerababenko@gmail.com
 PACKAGE_NAME = program
-PACKAGE_STRING = program 5.0, 1.0
+PACKAGE_STRING = program 1.0
 PACKAGE_TARNAME = program
 PACKAGE_URL = 
-PACKAGE_VERSION = 5.0, 1.0
+PACKAGE_VERSION = 1.0
 PATH_SEPARATOR = :
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = 
-VERSION = 5.0, 1.0
+VERSION = 1.0
 abs_builddir = /home/vboxuser/KPI_DevOPS
 abs_srcdir = /home/vboxuser/KPI_DevOPS
 abs_top_builddir = /home/vboxuser/KPI_DevOPS
