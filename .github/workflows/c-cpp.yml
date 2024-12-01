@@ -22,4 +22,4 @@ jobs:
       run: make
       
     - name: run tests in any
-      run: ./main
+      run: ./funcclass
