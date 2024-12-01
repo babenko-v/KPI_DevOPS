@@ -3,6 +3,6 @@
 
 int main() {
     FuncClass obj;
-    std::cout << "FuncA result: " << obj.FuncA(1.0) << std::endl;
+    std::cout << "FuncA result: " << obj.FuncA(5.0, 1.0) << std::endl;
     return 0;
 }
