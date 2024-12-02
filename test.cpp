@@ -3,6 +3,6 @@
 
 int main() {
     FuncClass obj;
-    assert(obj.FuncA(3, 1.0) == expected_value); // Replace expected_value
+    assert(obj.FuncA(1, 1.0) == 1.0); // Replace expected_value
     return 0;
 }
