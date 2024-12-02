@@ -2,9 +2,9 @@ name: Tests
 
 on: 
   push:
-    branches: ["branchAutoTest"]
+    branches: ["brachAutoTest"]
   pull_request: 
-    branches: ["branchAutoTest"]
+    branches: ["brachAutoTest"]
 
 jobs:
   build:
