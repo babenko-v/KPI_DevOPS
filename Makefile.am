@@ -32,4 +32,4 @@ debug:
 	@echo "${PACKAGE_BUGREPORT}"
 
 check: test 
-	@./test
+	./test
