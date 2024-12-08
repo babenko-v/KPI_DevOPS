@@ -1,6 +1,6 @@
 AUTOMAKE_OPTIONS = foreign
 bin_PROGRAMS = myprogram
-myprogram_SOURCES = main.cpp FuncClass.cpp FuncClass.h
+myprogram_SOURCES = main.cpp FuncClass.cpp FuncClass.h HTTP_Server.cpp
 
 check_PROGRAMS = test
 test_SOURCES = test.cpp FuncClass.cpp

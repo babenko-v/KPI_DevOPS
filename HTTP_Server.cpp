@@ -140,16 +140,16 @@ int CreateHTTPserver()
 
 			std::vector<double> aValues;
             aValues.reserve(1000000);
-            FuncA obj;
+            FuncClass obj;
 			// Mersenne Twister random engine
 			std::mt19937 mtre {123};
-			std::uniform_int_distribution<int> distr {5, 2000000};
+			std::uniform_int_distribution<int> distr {5, 55};
 
-			for (int i=0; i<1500000; i++) {
+			for (int i=0; i<600000; i++) {
 				aValues.push_back(obj.FuncA(distr(mtre), 4.0));
 			}
 
-            for(int i = 0; i < 700; i++)
+            for(int i = 0; i < 400; i++)
             {
                 sort(begin(aValues), end(aValues));
             }
