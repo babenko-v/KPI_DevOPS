@@ -1,18 +1,18 @@
-FROM alpine AS build
-RUN apk add --no-cache build-base automake autoconf git pkgconfig glib-dev gtest-dev gtest cmake
+FROM alpine:latest AS build
+RUN apk add --no-cache build-base make automake=1.16.5-r0 perl autoconf git pkgconfig glib-dev cmake libstdc++ libgcc
 
-WORKDIR /home/optima
-RUN git clone --branch branchHTTPservMutli https://github.com/babenko-v/KPI_DevOPS.git
-WORKDIR /home/optima/KPI_DevOPS
+WORKDIR /home/build
+RUN git clone --branch branchHTTPserver https://github.com/babenko-v/KPI_DevOPS.git
+WORKDIR /home/build/KPI_DevOPS
 
 
 RUN autoconf
 
 RUN ./configure
 
-RUN cmake
+RUN make
 
 
 FROM alpine
-COPY --from=build /home/optima/KPI_DevOPS/myprogram /usr/local/bin/myprogram
+COPY --from=build /home/build/KPI_DevOPS/myprogram /usr/local/bin/myprogram
 ENTRYPOINT ["/usr/local/bin/myprogram"]
