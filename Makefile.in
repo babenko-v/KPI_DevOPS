@@ -106,6 +106,8 @@ am_myprogram_OBJECTS = main.$(OBJEXT) FuncClass.$(OBJEXT) \
 	HTTP_Server.$(OBJEXT)
 myprogram_OBJECTS = $(am_myprogram_OBJECTS)
 myprogram_LDADD = $(LDADD)
+myprogram_LINK = $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) \
+	$(myprogram_LDFLAGS) $(LDFLAGS) -o $@
 am_test_OBJECTS = test.$(OBJEXT) FuncClass.$(OBJEXT)
 test_OBJECTS = $(am_test_OBJECTS)
 test_LDADD = $(LDADD)
@@ -298,6 +300,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = foreign
 myprogram_SOURCES = main.cpp FuncClass.cpp FuncClass.h HTTP_Server.cpp
+myprogram_LDFLAGS = -static
 test_SOURCES = test.cpp FuncClass.cpp
 CTRLF_DIR = $(CURDIR)/debian
 CTRLF_NAME = $(CTRLF_DIR)/control
@@ -386,7 +389,7 @@ clean-checkPROGRAMS:
 
 myprogram$(EXEEXT): $(myprogram_OBJECTS) $(myprogram_DEPENDENCIES) $(EXTRA_myprogram_DEPENDENCIES) 
 	@rm -f myprogram$(EXEEXT)
-	$(AM_V_CXXLD)$(CXXLINK) $(myprogram_OBJECTS) $(myprogram_LDADD) $(LIBS)
+	$(AM_V_CXXLD)$(myprogram_LINK) $(myprogram_OBJECTS) $(myprogram_LDADD) $(LIBS)
 
 test$(EXEEXT): $(test_OBJECTS) $(test_DEPENDENCIES) $(EXTRA_test_DEPENDENCIES) 
 	@rm -f test$(EXEEXT)
