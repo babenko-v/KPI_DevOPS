@@ -31,7 +31,7 @@ jobs:
         run: docker build --platform=linux/arm64 -t babenkovalera/multistage:arm64 --push .
       
       - name: Create manifest
-        run: docker manifest create ademch/optimaaztec --amend babenkovalera/multistage:amd64 --amend babenkovalera/multistage:arm64
+        run: docker manifest create babenkovalera/multistage --amend babenkovalera/multistage:amd64 --amend babenkovalera/multistage:arm64
       
       - name: Push manifest to dockerhub
         run: docker manifest push babenkovalera/multistage
