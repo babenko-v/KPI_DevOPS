@@ -4,7 +4,7 @@ IMAGE="babenkovalera/multistage"
 CPU_CORES=(0 1 2)
 CONTAINERS=("srv1" "srv2" "srv3")
 PORTS=(8081 8082 8083)
-CHECK_INTERVAL=20
+CHECK_INTERVAL=10
 BUSY_THRESHOLD=70.0
 IDLE_THRESHOLD=5.0
 
@@ -66,8 +66,8 @@ while true; do
         echo "New image update found. Restarting containers..."
         for name in "${active_containers[@]}"; do
             stop_container "$name"
-            i=${!CONTAINERS[@]}
-            launch_container "$name" "${CPU_CORES[$i]}" "${PORTS[$i]}"
+            index=${!CONTAINERS[@]}
+            launch_container "$name" "${CPU_CORES[$index]}" "${PORTS[$index]}"
         done
     fi
 
